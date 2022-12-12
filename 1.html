@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="STYLE.CSS"
+<body>
+<style>
+html{ background-color: black;
+background:
+url(https://i.gifer.com/2Ygh.gif) no-repeat center center;                            
+min-height: 100%;
+      
+      background-size: cover;
+    
+    }                         
+</style>
+<div class="nab">
+<h1><a href="резюме.html" target="blank" title="резюме" > Резюме </a></h1>
+<h1><a href="вев2.html" target="blank" title="Жеке мәліметтері" > Жеке мәліметтері </a></h1>
+<h1><a href="вев4.html" target="blank" title="html курсы" >Курс жайлы толық ақпарат </a></h1>
+<h1><a href="filter.html" target="blank" title="фильтер" >Фильтер </a></h1>
+<h1><a href="1.html" target="blank" title="card" >Card </a></h1>
+</div>
+<div class="end1">
+<BR><BR><h3><p ALIGN="center"><B>"Қош келдіңіздер"</B></H3>
+<BR><BR><BR><BR><marquee style="color:white; font-size:20px;">Қалым Балғын Сейлханқызы</marquee>
+<HR color="red" size=3   width=100%>
+</div>
+<div class="td">
+<TABLE BORDER="2" <td height="10" WIDTH=100% background="#00FF00"bgcolor="#00FF00" alt="fonr" border="0" cellspacing="4">
+<TR>
+<p align="center"><TD width="100"> <strong>Әндер жинағы</strong></center></TD>
+<TR>
+</div>
+<div class="img">
+<h2><TD height="50%"><strong>Видеоклип:Akha(какая ты красивая):</h2>
+<left><iframe width="500" height="150" src="AKHA.MP4" " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></left>
+</strong></TD>
+<TD>
+<BR>
+<a href="https://sefon.pro/mp3/528938-akha-kakaya-ty-krasivaya/">
+<h2> музыкасы:Akha(какая ты красивая)</h2>
+<audio controls>
+<source src="Akha - Какая Ты Красивая.mp3" type="audio/mpeg"></p>
+</a>
+</TD>
+</TR>
+</table>
+</font>
+<hr color=red  size=5   width=100%>
+</div>
+
+<script>
+    confirm("Қош келдіңіз! Осы веб парақшаға өткіңіз келеді ме?                                                 Да немесе Нет кнопкасын басуыңызды сұраймын!")
+    function elem(selector){
+    return document.querySelector(selector);
+}
+function elems(selector){
+    return document.querySelectorAll(selector); 
+}
+let input=elem("input"),
+    last_number,
+    operation;
+elems(".number").forEach( button => {
+    button.addEventListener("click", function () {
+        let number = this.innerText;
+        input.value=input.value + number;
+    });
+});
+elem("#add").addEventListener("click", function (){
+    last_number = input.value;
+    input.value="";
+    operation="add";
+    
+});
+elem("#eql").addEventListener("click", function (){
+    if(last_number && operation){
+        let result;
+    switch(operation){
+        case "add":{
+            result=parseInt(last_number) + parseInt(input.value);
+        } 
+    }
+    input.value = result;
+    last_number = null;
+    operation = null;
+    }
+});
+elem("#sqr").addEventListener("click", function (){
+    let number=parseInt(input.value);
+    input.value= number * number;
+});
+</script>
+</BODY>
+</head>
+</html>
